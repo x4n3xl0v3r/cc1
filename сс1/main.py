@@ -34,7 +34,7 @@ def get_args() -> Opt[tuple[int, int, int]]:
 
     try:
         return tuple(map(int, side_args))
-    except Exception:
+    except ValueError:
         invalid_input_data_handler()
 
 
